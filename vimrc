@@ -1,4 +1,6 @@
-colorscheme solarized
+if has('gui_running') 
+	colorscheme solarized
+endif
 
 set tabstop=4
 set shiftwidth=4
