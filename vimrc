@@ -36,3 +36,8 @@ set vb t_vb=
 " Show complete menu even when there is only match
 set completeopt=menu,preview,menuone
 
+" line numbers
+set number
+
+" completion menu
+set wildmenu

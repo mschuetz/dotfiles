@@ -1,0 +1,27 @@
+PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
+#prolog
+export LOCALSZ=100000
+export GLOBALSZ=100000
+
+#svn
+export EDITOR=vim
+
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
+
+# hm..?
+export CLICOLOR=1
+export LSCOLORS=ExCxhxdxbxegedabaghbag
+
+# usually I install nodejs in my home directory...
+export PATH=$HOME/node/bin:$PATH
+
+# set up rvm environment
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# load host specific configuration
+[[ -e $HOME/.zshrc-$(hostname) ]] && source $HOME/.zshrc-$(hostname) 
+
+[[ -e $HOME/.zshrc-private ]] && source $HOME/.zshrc-private 
+

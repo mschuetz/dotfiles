@@ -1,0 +1,19 @@
+if [ "$PS1" ]; then
+    alias top='top -o cpu'
+    alias ldd='otool -L'
+fi
+
+# if macvim exists, use it
+MACVIM=/Applications/MacVim.app/Contents/MacOS/Vim
+if [ -e $MACVIM ]; then
+	alias vim=$MACVIM
+fi
+
+# removes mouse acceleration on mac os
+[[ -e $(which killmouseaccel) ]] && killmouseaccel mouse trackpad
+
+export PATH=/usr/local/mysql/bin:$PATH
+
+#java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+

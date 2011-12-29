@@ -16,9 +16,12 @@
 # Get the directory this script lives in
 dir="$(cd "${0%/*}" && pwd -P)"
 
+curl -L http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc > zshrc
+cat zshrc-mine >> zshrc
+
 link_dir() {
 	for file in $(find $dir/$1 -maxdepth 1 -type f \
-		! -regex ".*\(Makefile\|MAPPING\|initialize.sh\|update.sh\)")
+		! -regex ".*\(\.gitignore\|zshrc-mine\|Makefile\|MAPPING\|initialize.sh\|update.sh\)")
 	do
 		file=$(basename $file)
 		# Check if we got a custom mapping
