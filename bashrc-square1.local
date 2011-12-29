@@ -1,0 +1,32 @@
+if [ "$PS1" ]; then
+    alias top='top -o cpu'
+    alias ldd='otool -L'
+fi
+
+# osx ssh keychain socket
+if [ -e /tmp/501/SSHKeychain.socket ]; then
+	export SSH_AUTH_SOCK=/tmp/501/SSHKeychain.socket
+fi
+
+# if macvim exists, use it
+MACVIM=/Applications/MacVim.app/Contents/MacOS/Vim
+if [ -e $MACVIM ]; then
+	alias vim=$MACVIM
+fi
+
+# macports
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# macports bash completion stuff, btw this is what's taking 300ms to load
+if [ -f /opt/local/etc/bash_completion ]; then
+    . /opt/local/etc/bash_completion
+fi
+
+# removes mouse acceleration on mac os
+[[ -e $(which killmouseaccel) ]] && killmouseaccel mouse trackpad
+
+export PATH=/usr/local/mysql/bin:$PATH
+
+#java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+

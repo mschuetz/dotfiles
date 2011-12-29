@@ -1,0 +1,11 @@
+# used to contain a github token. if you need this, visit http://help.github.com/set-your-user-name-email-and-github-token/
+
+[user]
+	name = Matthias Schuetz
+	email = mschuetz@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	excludesfile = /Users/matze/.gitignore_global
