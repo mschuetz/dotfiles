@@ -9,3 +9,12 @@
 	branch = auto
 [core]
 	excludesfile = ~/.gitignore_global
+[alias]
+	a     = add
+	ap    = add -p
+	b     = branch
+	c     = commit
+	ca    = commit -a
+	co    = checkout
+	cm    = commit -m
+	cam   = commit -am
