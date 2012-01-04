@@ -36,5 +36,6 @@ Thumbs.db
 ####################
 .project
 .classpath
+.buildpath
 
 .*.swp

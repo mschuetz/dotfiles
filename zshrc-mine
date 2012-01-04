@@ -18,10 +18,10 @@ export LSCOLORS=ExCxhxdxbxegedabaghbag
 export PATH=$HOME/node/bin:$PATH
 
 # set up rvm environment
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+if [ -s $HOME/.rvm/scripts/rvm ]; then source $HOME/.rvm/scripts/rvm; fi
 
 # load host specific configuration
-[[ -e $HOME/.zshrc-$(hostname) ]] && source $HOME/.zshrc-$(hostname) 
+if [ -e $HOME/.zshrc-$(hostname) ]; then source $HOME/.zshrc-$(hostname); fi
 
-[[ -e $HOME/.zshrc-private ]] && source $HOME/.zshrc-private 
+if [ -e $HOME/.zshrc-private ]; then source $HOME/.zshrc-private; fi 
 

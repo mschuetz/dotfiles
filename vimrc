@@ -9,6 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smarttab "
+set autoindent
 
 if has("multi_byte")
 	set encoding=utf-8

@@ -1,6 +1,6 @@
 if [ "$PS1" ]; then
-    alias top='top -o cpu'
-    alias ldd='otool -L'
+	alias top='top -o cpu'
+	alias ldd='otool -L'
 fi
 
 # if macvim exists, use it
