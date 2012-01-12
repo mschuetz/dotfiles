@@ -1,5 +1,8 @@
 if has('gui_running') 
 	colorscheme solarized
+	if has('gui_gtk2')
+		set guifont=Ubuntu\ Mono\ 9
+	endif
 endif
 
 set tabstop=4
