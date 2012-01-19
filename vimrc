@@ -45,3 +45,16 @@ set number
 
 " completion menu
 set wildmenu
+
+set laststatus=2
+
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %h\ \ \ Line:\ %l/%L:%c
+
+function! HasPaste()
+    if &paste
+        return 'PASTE MODE  '
+    else
+        return ''
+    endif
+endfunction
+
