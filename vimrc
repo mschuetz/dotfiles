@@ -58,3 +58,6 @@ function! HasPaste()
     endif
 endfunction
 
+" browser-style tab switching
+map <C-tab> :tabnext<CR>
+map <C-S-tab> :tabprevious<CR>
