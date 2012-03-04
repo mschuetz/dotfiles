@@ -37,5 +37,8 @@ Thumbs.db
 .project
 .classpath
 .buildpath
-
+.settings
 .*.swp
+
+# maven bin directory
+target
