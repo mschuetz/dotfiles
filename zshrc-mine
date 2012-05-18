@@ -25,3 +25,7 @@ if [ -e $HOME/.zshrc-$(hostname) ]; then source $HOME/.zshrc-$(hostname); fi
 
 if [ -e $HOME/.zshrc-private ]; then source $HOME/.zshrc-private; fi 
 
+function agu() {
+	host=$1
+	ssh $host 'sudo apt-get -y upgrade'
+}
