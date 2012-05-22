@@ -40,5 +40,8 @@ Thumbs.db
 .settings
 .*.swp
 
+# aptana
+.loadpath
+
 # maven bin directory
 target
