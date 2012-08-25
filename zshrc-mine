@@ -23,9 +23,12 @@ if [ -s $HOME/.rvm/scripts/rvm ]; then source $HOME/.rvm/scripts/rvm; fi
 # load host specific configuration
 if [ -e $HOME/.zshrc-$(hostname) ]; then source $HOME/.zshrc-$(hostname); fi
 
+if [ -e $HOME/.zshrc-$(uname) ]; then source $HOME/.zshrc-$(uname); fi
+
 if [ -e $HOME/.zshrc-private ]; then source $HOME/.zshrc-private; fi 
 
 function agu() {
 	host=$1
 	ssh $host 'sudo apt-get -y upgrade'
 }
+
