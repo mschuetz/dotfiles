@@ -37,5 +37,11 @@ Thumbs.db
 .project
 .classpath
 .buildpath
-
+.settings
 .*.swp
+
+# aptana
+.loadpath
+
+# maven bin directory
+target

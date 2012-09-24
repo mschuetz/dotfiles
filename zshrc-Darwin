@@ -1,0 +1,7 @@
+if [ "$PS1" ]; then
+	alias top='top -o cpu'
+	alias ldd='otool -L'
+fi
+
+# java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`

@@ -33,3 +33,5 @@ export PATH=$HOME/node/bin:$PATH
 [[ -e $HOME/.bashrc-$(hostname) ]] && source $HOME/.bashrc-$(hostname) 
 
 [[ -e $HOME/.bashrc-private ]] && source $HOME/.bashrc-private 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

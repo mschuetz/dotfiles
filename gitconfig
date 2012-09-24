@@ -18,3 +18,6 @@
 	co    = checkout
 	cm    = commit -m
 	cam   = commit -am
+	pom   = push origin master
+[github]
+	user = mschuetz
