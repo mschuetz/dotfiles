@@ -7,7 +7,7 @@ fi
 # removes mouse acceleration on mac os
 [[ -e $(which killmouseaccel) ]] && killmouseaccel mouse trackpad
 
-export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/mysql/bin:$PATH
+export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
 
 # include mysql libs
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
