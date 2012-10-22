@@ -1,0 +1,5 @@
+# make scripts from debian gem path accessible
+export PATH=/var/lib/gems/1.8/bin:$PATH
+which gnome-open && alias gopen=gnome-open
+which exo-open && alias gopen=exo-open
+
