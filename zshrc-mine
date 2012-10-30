@@ -22,6 +22,7 @@ if [ -s $HOME/.rbenv/bin/rbenv ]
 then
 	export PATH=$HOME/.rbenv/bin:$PATH
 	eval "$(rbenv init -)"
+	export MANPATH=$MANPATH:$(rbenv which .)/../share/man
 # set up rvm environment
 elif [ -s $HOME/.rvm/scripts/rvm ]
 then
@@ -40,3 +41,4 @@ function agu() {
 	ssh $host 'sudo apt-get -y upgrade'
 }
 
+export M2_REPO=$HOME/.m2/repository
