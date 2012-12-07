@@ -2,4 +2,8 @@
 export PATH=/var/lib/gems/1.8/bin:$PATH
 which gnome-open > /dev/null && alias gopen=gnome-open
 which exo-open > /dev/null && alias gopen=exo-open
-
+alias agi="sudo apt-get install"
+alias agu="sudo apt-get update && sudo apt-get upgrade"
+alias afs="apt-file search"
+export PROCESSORS=$(grep '^processor' /proc/cpuinfo | wc -l)
+alias make="make -j $PROCESSORS"
