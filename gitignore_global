@@ -39,9 +39,15 @@ Thumbs.db
 .buildpath
 .settings
 .*.swp
+.buildcache
 
 # aptana
 .loadpath
 
 # maven bin directory
 target
+
+*.*~
+
+# mvn release plugin
+*.releaseBackup
