@@ -42,3 +42,7 @@ function agu() {
 }
 
 export M2_REPO=$HOME/.m2/repository
+
+function gh() {
+	grep "$*" ~/.zsh_history
+}
