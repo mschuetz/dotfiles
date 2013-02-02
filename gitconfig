@@ -23,5 +23,7 @@
 	last = log -1 HEAD
 	st = status
 	br = branch
+	d     = diff
+
 [github]
-	user = mschuetz
+user = mschuetz
