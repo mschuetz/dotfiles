@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+*.pyc
 
 # Packages #
 ############
@@ -39,6 +40,7 @@ Thumbs.db
 .buildpath
 .settings
 .*.swp
+.pydevproject
 
 # aptana
 .loadpath
