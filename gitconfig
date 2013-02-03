@@ -1,5 +1,3 @@
-# used to contain a github token. if you need this, visit http://help.github.com/set-your-user-name-email-and-github-token/
-
 [user]
 	name = Matthias Schuetz
 	email = mschuetz@gmail.com
@@ -20,10 +18,10 @@
 	cam   = commit -am
 	pom   = push origin master
 	unstage = reset HEAD --
-	last = log -1 HEAD
-	st = status
-	br = branch
+	last  = log -1 HEAD
+	st    = status
+	br    = branch
 	d     = diff
 
 [github]
-user = mschuetz
+	user = mschuetz
