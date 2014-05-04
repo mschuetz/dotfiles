@@ -46,10 +46,13 @@ Thumbs.db
 # aptana
 .loadpath
 
-# maven bin directory
+# maven
 target
+*.versionsBackup
+*.releaseBackup
+
+# gradle
+.gradle/
+build
 
 *.*~
-
-# mvn release plugin
-*.releaseBackup
