@@ -22,6 +22,6 @@
 	st    = status
 	br    = branch
 	d     = diff
-
+	hist  = log --pretty=format:'%h %ai | %s%d [%an]' --graph --date=short --all
 [github]
 	user = mschuetz
