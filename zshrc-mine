@@ -1,14 +1,7 @@
 PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-#prolog
-export LOCALSZ=100000
-export GLOBALSZ=100000
-
 #svn
 export EDITOR=vim
-
-#export LC_ALL=en_GB.UTF-8
-#export LANG=en_GB.UTF-8
 
 # hm..?
 export CLICOLOR=1

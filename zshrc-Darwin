@@ -4,11 +4,10 @@ if [ "$PS1" ]; then
 fi
 
 # java
-#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 # oracle installation
-#export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
+
 export PATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
 export PATH=/opt/local/lib/mysql55/bin:$PATH
 
