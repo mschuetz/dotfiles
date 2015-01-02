@@ -55,4 +55,6 @@ target
 .gradle/
 build
 
+.idea
+
 *.*~

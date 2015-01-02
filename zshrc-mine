@@ -27,7 +27,7 @@ if [ -e $HOME/.zshrc-$(hostname) ]; then source $HOME/.zshrc-$(hostname); fi
 
 if [ -e $HOME/.zshrc-$(uname) ]; then source $HOME/.zshrc-$(uname); fi
 
-if [ -e $HOME/.zshrc-private ]; then source $HOME/.zshrc-private; fi 
+if [ -e $HOME/.zshrc-private ]; then source $HOME/.zshrc-private; fi
 
 function agu() {
 	host=$1
@@ -39,3 +39,5 @@ export M2_REPO=$HOME/.m2/repository
 function gh() {
 	grep "$*" ~/.zsh_history
 }
+
+export SAVEHIST=10000000
